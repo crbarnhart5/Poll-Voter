@@ -9,5 +9,10 @@ for i in range(1, num+1):
     button.click()
     vote = browser.find_element_by_name('qp_b854840')
     vote.click()
+    if i > 1:
+        print(str(i) + ' times')
+    else:
+        print(str(i) + ' time')
+    browser.quit()
 sys.exit()
     
